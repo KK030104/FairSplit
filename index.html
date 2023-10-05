@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Calculator</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- script -->
+    <script src="hello.js"></script>
+    <!-- font awesome script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-nav d_flex">
+        <div class="logo">
+          <a href="#home"><h2>FairSplit</h2></a>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div class="navlink">
+          <ul class="f_flex uppercase">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href=""><button class="btn_shadow">Login</button></a></li>
+          </ul>
+        </div>
+    
+        <!-- Hamburger Menu Icon (Moved here) -->
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+    
+    
+
+    <section class="hero" id="about">
+      <div class="container f_flex top">
+        <div class="left top" style="margin-right: 10px;">
+          <h3>WELCOME TO SMART SPLIT CALCULATOR</h3>
+          <h1>Divide Expenses, Not Friends: Your Split Calculator Solution</h1>
+          <h2>FairSplit</h2>
+
+          <p>
+            FairSplit simplifies splitting expenses and calculating averages for
+            every participant. Whether it's a vacation, shared rent, or
+            household bills, effortlessly manage shared costs. Create groups,
+            log expenses, and let the platform do the math for you. With
+            real-time updates and secure group management, there's no room for
+            confusion. Stay organized with detailed histories and reports, all
+            accessible on your mobile device. Say goodbye to financial headaches
+            and enjoy stress-free expense sharing.
+          </p>
+        </div>
+        <div class="right">
+          <div class="right_img">
+            <img src="calc.png" alt="calc_img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calc" id="main">
+      <div class="container1">
+        <h1 class="mid-head">Welcome to Smart Split Calculator!</h1>
+        <p class="mid-des">
+          Enter the total number of people to split the bill:
+        </p>
+        <input class="input-p" type="number" id="totalPersonsInput" />
+        <button id="startButton">Start</button>
+      </div>
+      <div id="inputForm" class="container2 hidden">
+        <div id="inputFields" class="user">
+          <!-- Input fields for names and amounts will be added here dynamically -->
+        </div>
+        <button id="calculateButton">Calculate</button>
+      </div>
+      <div id="result" class="container hidden result">
+        <!-- Results will be displayed here -->
+      </div>
+    </section>
+
+    <footer id="about">
+      <div class="about-head">
+        <h1>Contact us</h1>
+      </div>
+      <div class="about-sec">
+        <div class="about-left">
+          <div class="about-details">
+            <ul>
+              <li>
+                <a href="How_it_works/How_it_works.html">How it Works</a>
+              </li>
+
+              <li>
+                <a href="#">About us</a>
+              </li>
+
+              <li>
+                <a href="#">Help and Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <!-- <div class="footer-img">
+            <img
+              class="carpool-img"
+              src="images/carpool.png"
+              alt="carpool-img"
+            />
+          </div> -->
+
+          <h4 class="social-head">Connect us on...</h4>
+
+          <div class="social">
+            <span class="spanspace">
+              <a href="www.facebook.com"
+                ><i class="social-icon fa-brands fa-facebook fa-2x"></i
+              ></a>
+            </span>
+            <span class="spanspace">
+              <a href="www.instagram.com"
+                ><i class="social-icon fa-brands fa-instagram fa-2x"></i
+              ></a>
+            </span>
+            <span class="spanspace">
+              <a href="www.twitter.com"
+                ><i class="social-icon fa-brands fa-twitter fa-2x"></i
+              ></a>
+            </span>
+            <span class="spanspace">
+              <a href="www.gmail.com"
+                ><i class="social-icon fa-solid fa-envelope fa-2x"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="terms-copyright">
+        <div class="copyright">
+          <p>© FairSplit 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script>
+        const Header = () => {
+          // fixed Header
+          window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+            header.classList.toggle("active", window.scrollY > 100);
+          });
+        };
+      </script> -->
+  </body>
+</html>
